@@ -1,0 +1,20 @@
+.employee{
+    background-color: darkseagreen;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.employee.Project{
+    border-left: 10px solid green;
+}
+
+.employee h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#war{
+background-color: red;
+}

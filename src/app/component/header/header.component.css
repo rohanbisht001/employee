@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+   
+}
+.emp{
+    font-size: 40px;
+   padding: 30px 170px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.si{
+    padding: 10px 30px;
+}

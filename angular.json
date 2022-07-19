@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "appdemo": {
+    "employee": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/appdemo",
+            "outputPath": "dist/employee",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "appdemo:build:production"
+              "browserTarget": "employee:build:production"
             },
             "development": {
-              "browserTarget": "appdemo:build:development"
+              "browserTarget": "employee:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "appdemo:build"
+            "browserTarget": "employee:build"
           }
         },
         "test": {
@@ -102,5 +98,7 @@
       }
     }
   },
-  "defaultProject": "appdemo"
+  "cli": {
+    "analytics": false
+  }
 }
